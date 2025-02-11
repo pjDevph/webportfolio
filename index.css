@@ -1,0 +1,375 @@
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+#navbar {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+#navbar-logo img {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 15px;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00bcd4 !important;
+}
+
+/* Ensure the navbar-toggler icon is visible */
+.navbar-toggler {
+    border: none; /* Remove the border of the button */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+/* Landing Section Styles */
+#landing {
+    min-height: 100vh; /* Ensures full viewport height */
+    display: flex;
+    align-items: center; /* Centers vertically */
+    justify-content: center;
+    padding: 50px 0; /* Adds breathing room */
+    background: rgba(0, 0, 0, 0.1); /* Light transparency effect */
+}
+
+#landing h1 {
+    font-size: 2.5rem;
+}
+
+#landing p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    #landing {
+        flex-direction: column; /* Stacks items */
+        text-align: center; /* Centers everything */
+    }
+
+    #landing img {
+        width: 80%; /* Shrinks image */
+        margin-bottom: 20px; /* Adds spacing */
+    }
+
+    #landing h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Projects Section Styles */
+#projects {
+    
+    background-color: #212121; /* Darker background for better contrast */
+    color: white;
+    padding: 80px 0
+}
+
+#projects h1 {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+
+}
+
+.carousel-item img {
+    height: auto;
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    color: #00bcd4;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    color: #f2f3f4 ;
+    background: rgba(76, 175, 80, 0.7);
+    border-radius: 50px;
+
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* Tools Section Styles */
+#tools {
+    padding: 50px 0;
+
+}
+
+#tools h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tool-row img {
+    width: 80px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tool-row img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section Styles */
+#contacts {
+    background: #222; /* Darker background */
+    color: white;
+    padding: 10px;
+}
+
+#contacts h2 {
+    font-size: 3rem;
+    color: #00bcd4;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+#contacts-form {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+#contacts-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contacts-form label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+#contacts-form input,
+#contacts-form textarea {
+    background: #333;
+    border: 2px solid #00bcd4;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contacts-form input:focus,
+#contacts-form textarea:focus {
+    outline: none;
+    border: 2px solid #0097a7;
+}
+
+#contacts-form button {
+    background-color: #00bcd4;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    color: white;
+    width: 100%;
+    transition: 0.3s;
+}
+
+#contacts-form button:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+footer span {
+    margin: 0 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #landing h1 {
+        font-size: 2rem;
+    }
+
+    #landing p {
+        font-size: 1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    #tools h2 {
+        font-size: 1.5rem;
+    }
+
+    .tool-row img {
+        width: 60px;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    #contact-form {
+        padding: 15px;
+    }
+
+    #contact-form label {
+        font-size: 0.9rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        padding: 8px;
+    }
+
+    #contact-form button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #landing h1 {
+        font-size: 1.5rem;
+    }
+
+    #landing p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    #tools h2 {
+        font-size: 1.2rem;
+    }
+
+    .tool-row img {
+        width: 60px;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact-form {
+        padding: 10px;
+    }
+
+    #contact-form label {
+        font-size: 0.8rem;
+    }
+
+    #contact-form input,
+    #contact-form textarea {
+        padding: 6px;
+    }
+
+    #contact-form button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+
+#social {
+    padding: 20px 0; /* Adds padding for spacing */
+}
+
+#social h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 1px;
+}
+
+#social a {
+    margin: 5px;
+}
+#social img {
+    transition: transform 0.3s ease; /* Adds a hover effect */
+    max-width: 30px; /* Limits the size of the icons */
+    margin: auto;
+}
+
+#social img:hover {
+    transform: scale(1.2); /* Enlarges icons on hover */
+}
+
+
+}
+
+@media (min-width: 768px) {
+    #social img {
+        width: 30px; /* Adjust size for tablets and larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    #social img {
+        width: 50px; /* Adjust size for larger desktops */
+    }
+}
+
+
+
+
+
+
+
+
+
+#core-tools img, #other-tools img {
+    width: 100%; /* Default to full width for small screens */
+    max-width: 150px; /* Max width for larger screens */
+}
+
+@media (min-width: 768px) {
+    #core-tools img, #other-tools img {
+        width: 150px; /* Adjust size for tablets and larger screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    #core-tools img, #other-tools img {
+        width: 300px; /* Adjust size for larger desktops */
+    }
+}
